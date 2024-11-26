@@ -1,0 +1,65 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+       <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title"> Survey form project</h1>
+    <p id="description"> Thank you for taking the time to fill out this form to help us improve our skills </p>
+    <form id="survey-form" method="post" action="">
+<fieldset>
+  <label id="name-label" for="name">Name <input id="name" name="name" type="text" required placeholder="Enter your name"/></label>
+  <label id="email-label" for="email">Email  <input id="email" name="email" type="email" required placeholder="Enter your Email"/></label>
+<label id="number-label" for="number"> Number <input id="number" type="number" min="15" max="99" placeholder="Enter your number" "/></label>
+</fieldset>
+<fieldset>
+  <label> What programs do you know the best </label>
+  <select id="dropdown" name="programs">
+<option value="">Select one</option>
+<option value="1"> HTML</option>
+<option value="2"> Phyton</option>
+<option value="3">CSS</option>
+  </select>
+</fieldset>
+<fieldset>
+  <p> Would you recommend FreeCodeCamp to start? </p>
+  <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+  <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked=""> Maybe</label>
+   <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked=""> Not at all</label>
+</fieldset>
+<fieldset>
+  <p> What would you like to learn next?
+   <div class="clue">(Check all that apply)</p>
+    <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+    <label><input name="prefer" value="java" type="checkbox" class="input-checkbox">Java</label>
+    <label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end projects</label>
+</fieldset>
+<fieldset>
+   <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I have several skills in.."></textarea>
+        </label>
+</fieldset>
+<input  id="submit" type="submit" value="Submit" />
+</form>
+</body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+
+}
+
+h1,p{
+  text-align:center;
+}
+
+
+** end of undefined **
+
